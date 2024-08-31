@@ -16,7 +16,7 @@ def login():
             flash("Invalid credentials. Please try again.", 'failure')
             return redirect(url_for('login_bp.login'))
     
-    return render_template('login.html')
+    return "f"
 
 
 @login_bp.route('/register', methods=['GET', 'POST'])
@@ -24,5 +24,5 @@ def register():
     if request.method == 'POST':
         # Add your registration logic here
         pass
-    return render_template('register.html')
+    return "a"
 
